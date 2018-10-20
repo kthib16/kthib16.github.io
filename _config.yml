@@ -1,0 +1,75 @@
+# SITE CONFIGURATION
+baseurl: "" # the subpath of your site, e.g. /blog/ (optional)
+url: "http://www.thibodeauxdesign.com" # the base hostname & protocol for your site
+
+# THEME-SPECIFIC CONFIGURATION
+theme_settings:
+  # Meta
+  title: Kevin Thibodeaux
+  description: "A personal portfolio documenting my projects, process, and more"
+
+  # Header and footer text
+  header_text: >
+     <h1>Creative print and web designer</h1>
+     <p>Learning about JavaScript, AngularJS, and more as I go</p>
+  header_text_feature_image:
+  footer_text: >
+   Powered by <a href="http://jekyllrb.com">Jekyll</a> and made with love.
+
+  # Icons
+  rss: false
+  email_address: kthib16@gmail.com
+  behance:
+  bitbucket:
+  dribbble:
+  facebook:
+  flickr:
+  github: kthib16
+  google_plus:
+  instagram:
+  linkedin: https://www.linkedin.com/in/thibodeauxkevin/
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:
+  steam:
+  tumblr:
+  twitter:
+  wordpress:
+  youtube:
+
+  # Scripts
+  google_analytics: "UA-109719622-1"
+  disqus_shortname:
+  katex: true # Enable if using math markup
+
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next: "Next"
+  str_prev: "Prev"
+  str_continue_reading: "Read more &raquo;"
+
+  # Colours, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+  google_fonts: "Heebo:100|Lato:300,300i,400,700,700i"
+
+# PAGINATION
+paginate: 100
+paginate_path: "blog/page:num"
+
+# COLLECTIONS
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+
+# BUILD SETTINGS
+markdown: kramdown
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+gems: [jekyll-paginate]

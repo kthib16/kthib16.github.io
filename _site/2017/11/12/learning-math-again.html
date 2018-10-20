@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Learning Math Again | Kevin Thibodeaux</title>
+	<meta name="description" content="I used to be a pretty decent student. I got A’s in all of my classes and Math was no exception. But then I went to college and became a liberal arts major an...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="http://localhost:4000/2017/11/12/learning-math-again.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Kevin Thibodeaux" href="http://localhost:4000/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Heebo:100|Lato:300,300i,400,700,700i" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+</head>
+
+  <body>
+    <header class="site-header">
+  <nav class="site-nav">
+    <ul>
+      
+      
+      
+      
+      <li>
+        <a class="page-link" href="/about/">
+          About
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a class="page-link" href="/contact/">
+          Contact
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </nav>
+
+  
+  <div class="call-out" 
+  style="background-image: url('/')">
+    <h1 class="site-title">
+      <a href="/">Kevin Thibodeaux</a>
+    </h1>
+    <div class="divider"></div>
+    <h1 class="title">Learning Math Again</h1>
+  </div>
+  
+</header>
+
+    <div class="content">
+      <article >
+  <section class="post-content"><p>I used to be a pretty decent student. I got A’s in all of my classes and Math was no exception. But then I went to college and became a liberal arts major and out went any math I had picked up in my 22 years of life. Now that I’m learning JavaScript, I’m realizing that I’m using parts of my brain that I haven’t used in a long, long time.</p>
+
+<p> </p>
+
+<p class="center"><img src="/img/terminal-typing.gif" alt="" /></p>
+
+<p> </p>
+
+<p>When I worked on the music playing application BlocJams, I created a sound bar that continuously kept track of a songs progress as the song played. This involved a lot of math in terms of figuring out where the physical player bar was <em>on</em> the page, but then I had to figure out a ton of different variables to update this location as the song played.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">scope</span><span class="p">.</span><span class="nx">trackThumb</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$document</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="s1">'mousemove.thumb'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">percent</span> <span class="o">=</span> <span class="nx">calculatePercent</span><span class="p">(</span><span class="nx">seekBar</span><span class="p">,</span> <span class="nx">event</span><span class="p">);</span>
+      <span class="nx">scope</span><span class="p">.</span><span class="nx">$apply</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+          <span class="nx">scope</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">percent</span> <span class="o">*</span> <span class="nx">scope</span><span class="p">.</span><span class="nx">max</span><span class="p">;</span>
+          <span class="nx">notifyOnChange</span><span class="p">(</span><span class="nx">scope</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+      <span class="p">});</span>
+  <span class="p">});</span></code></pre></figure>
+
+<p>And it wasn’t just about learning math all over again. Part of the most difficult part about designing websites is anticipating what the user is doing and how to track that. With BlocJams, I had to update my code based on where the user dragged the seek bar and update the playback of the song to reflect that. This took a lot of logic that I wasn’t used to and I’m sure as I go, this will only get harder (I’m practicing with Codewars to try and get back into this type of thinking).</p>
+
+<p>This has probably been the trickiest part of learning different programming languages. For everything else, it’s simple enough to Google what exactly array.splice() does, but it’s not exactly easy to find the best way to plan for different scenarios. For that it’s going to take a lot of trial and error.</p>
+
+<p>But that’s much of the fun of programming so far.</p>
+</section>
+</article>
+
+<!-- Disqus -->
+
+
+    </div>
+    <script src="/js/main.js"></script>
+
+
+<footer class="site-footer">
+  <p class="text">Powered by <a href="http://jekyllrb.com">Jekyll</a> and made with love.
+</p>
+</footer>
+
+
+  </body>
+</html>

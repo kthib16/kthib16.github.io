@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kevin Thibodeaux</title>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>http://localhost:4000/</link>
+    <description>A personal portfolio documenting my projects, process, and more</description>
+    <pubDate>Tue, 14 Nov 2017 21:04:10 -0500</pubDate>
+    
+      <item>
+        <title>My Frontend Journey</title>
+        <link>http://localhost:4000/2017/11/12/my-frontend-journey.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/12/my-frontend-journey.html</guid>
+        <description>&lt;p&gt;In my day-to-day life, I work in communications where  I regularly deal with data visualization projects (whether it’s overseeing the projects or working on them myself) as well as working with Wordpress to upload content, including making decisions on how that content is presented. So it seemed to me only natural to advance my career by learning web design – either in greater depth (HTML/CSS) or something entirely new(JavaScript/frameworks such as Angular).&lt;/p&gt;
+
+&lt;p&gt;Now I feel like I’m sort of behind the times. These days it seems like everyone has at least minimal experience with some sort of code and can at the very least &lt;em&gt;italicize&lt;/em&gt; words. In fact, I was formerly a journalist and some of my first real experience with creative web design (and when I grew really fascinated with it) was when that industry started to migrate toward a digital-first mindset.&lt;/p&gt;
+
+&lt;p&gt;So it seems very overdue that I would learn these skills, and it’s something I’ve been meaning to pick up for a long time (much like my actual graphic design experience, which I sort of learned to master as I went along).&lt;/p&gt;
+
+&lt;p&gt;There’s a lot of overlap between my graphic design process (and even my writing process) and my approach to web design. As a journalist, I’d also have to take complex language and industry jargon, decipher it and turn it into something easy to read and understand for the layman.&lt;/p&gt;
+
+&lt;p&gt;As a designer working with a bunch of economists, it can sometimes be difficult to distill a bunch of complex ideas into a simple, easy-to-read chart or infographic, but with the proliferation of social media, it’s important to understand that once something is on the web, anyone can find it. So that means the information presented must be accessible as possible.&lt;/p&gt;
+
+&lt;p&gt;To that extent in web design, it’s not just about what looks the &lt;em&gt;coolest&lt;/em&gt;, but what’s the best way to present information. It’s all about the user and making their experience as easy as possible.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 12 Nov 2017 00:00:00 -0500</pubDate>
+      </item>
+    
+      <item>
+        <title>Learning Math Again</title>
+        <link>http://localhost:4000/2017/11/12/learning-math-again.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/12/learning-math-again.html</guid>
+        <description>&lt;p&gt;I used to be a pretty decent student. I got A’s in all of my classes and Math was no exception. But then I went to college and became a liberal arts major and out went any math I had picked up in my 22 years of life. Now that I’m learning JavaScript, I’m realizing that I’m using parts of my brain that I haven’t used in a long, long time.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/terminal-typing.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;When I worked on the music playing application BlocJams, I created a sound bar that continuously kept track of a songs progress as the song played. This involved a lot of math in terms of figuring out where the physical player bar was &lt;em&gt;on&lt;/em&gt; the page, but then I had to figure out a ton of different variables to update this location as the song played.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;scope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trackThumb&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;$document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'mousemove.thumb'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;percent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;calculatePercent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;seekBar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;scope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;scope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;percent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;scope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;notifyOnChange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;scope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;And it wasn’t just about learning math all over again. Part of the most difficult part about designing websites is anticipating what the user is doing and how to track that. With BlocJams, I had to update my code based on where the user dragged the seek bar and update the playback of the song to reflect that. This took a lot of logic that I wasn’t used to and I’m sure as I go, this will only get harder (I’m practicing with Codewars to try and get back into this type of thinking).&lt;/p&gt;
+
+&lt;p&gt;This has probably been the trickiest part of learning different programming languages. For everything else, it’s simple enough to Google what exactly array.splice() does, but it’s not exactly easy to find the best way to plan for different scenarios. For that it’s going to take a lot of trial and error.&lt;/p&gt;
+
+&lt;p&gt;But that’s much of the fun of programming so far.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 12 Nov 2017 00:00:00 -0500</pubDate>
+      </item>
+    
+  </channel>
+</rss>
