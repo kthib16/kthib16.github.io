@@ -1,6 +1,7 @@
 ---
 layout: post
 title: BlocJams
+permalink: /bloc-jams/
 thumbnail-path: "img/BlocJams.png"
 short-description: BlocJams is an online music library to store and play music.
 
