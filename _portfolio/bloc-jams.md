@@ -3,6 +3,7 @@ layout: post
 title: BlocJams
 thumbnail-path: "img/BlocJams.png"
 short-description: BlocJams is an online music library to store and play music.
+url: bloc-jams
 
 ---
 
