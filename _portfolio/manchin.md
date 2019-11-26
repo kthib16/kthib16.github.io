@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Manchin in the Middle
-thumbnail-path: "img/school-bus.png"
+thumbnail-path: "img/manchin.png"
 short-description: Four-page spread on the cover story for The Washington Examiner--a feature on West Virginia Senator Joe Manchin.
 
 ---
