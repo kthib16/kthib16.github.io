@@ -8,7 +8,7 @@ short-description: Visualizing how school district boundaries are drawn and how 
 
 ---
 
-{:.center}
+{:.schools-center}
 ![]({{ site.baseurl }}/img/school-district-lines.png)
 
 ### Explanation
