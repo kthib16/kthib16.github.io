@@ -10,7 +10,7 @@ short-description: Ten years after the worst moments of the global financial cri
 ---
 
 {:.center}
-[![]({{ site.baseurl }}/img/crisis-retrospective.png)](https://www.youtube.com/embed/LWJM5MyL63M)
+![]({{<iframe width="560" height="315" src="https://www.youtube.com/embed/LWJM5MyL63M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>}})
 
 ### Explanation
 
