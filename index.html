@@ -6,7 +6,7 @@ layout: default
 
   <div class="work">
     <h2>My Work</h2>
-    {% for project in site.portfolio %}
+    {% for project in site.portfolio limit:3 %}
     <div class="project">
       <div class="project-thumb">
         <a href="{{ project.url | prepend: site.baseurl }}">
@@ -20,7 +20,6 @@ layout: default
     </div>
     {% endfor %}
   </div>
-
 
   <div class="posts">
     <h2 class="post-header">My Posts</h2>
