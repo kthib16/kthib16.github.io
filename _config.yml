@@ -13,8 +13,7 @@ theme_settings:
      <h1>Creative print and web designer</h1>
      <p>Learning about JavaScript, AngularJS, and more as I go</p>
   header_text_feature_image:
-  footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> and made with love.
+
 
   # Icons
   rss: false
