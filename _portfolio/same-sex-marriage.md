@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Gay marriage in America after Windsor and Obergefell
+type: Writing and Editing
 permalink: /same-sex-marriage/
 thumbnail-path: "img/same-sex-marriage.png"
-short-description: In “Same-sex married tax filers after Windsor and Obergefell," Brookings Senior Fellow Adam Looney, along with Robin Fisher and Geof Gee at the Treasury Department Office of Tax Analysis, examine data from jointly-filed tax returns to provide the first analysis of marriage patterns of same-sex couples in the years immediately following the significant Supreme Court rulings.
+short-description: The Brookings Institution examines data from jointly-filed tax returns to provide the first analysis of marriage patterns of same-sex couples in the years immediately following the legalization of same-sex marriage.
 
 ---
 

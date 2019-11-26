@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Brookings looks back on the financial crisis
+type: Multimedia
 permalink: /crisis-retrospective/
 thumbnail-path: "img/crisis-retrospective.png"
-short-description: Ten years after the worst moments of the global financial crisis, staff at the Brookings Institution look back on where they were in 2008 and what they’ve learned since then.
+short-description: Ten years after the worst moments of the global financial crisis, Brookings staff look back on where they were in 2008 and what they’ve learned since then.
 
 
 ---

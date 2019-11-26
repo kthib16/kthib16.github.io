@@ -1,9 +1,10 @@
 ---
 layout: post
 title: How school district boundaries can create more segregated schools
+type: Data Visualization
 permalink: /racial-imbalance/
 thumbnail-path: "img/school-bus.png"
-short-description: An interactive map for the Brookings Institution charting the rise in nonbank mortgage lending after the Great Recession.
+short-description: Visualizing how school district boundaries are drawn and how that can affect the demographics in local schools.
 
 ---
 

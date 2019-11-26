@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Nonbank Mortgage Lending Map
+type: Data Visualization
 permalink: /mortgage-market-map/
 thumbnail-path: "img/mortgage-market-map.png"
 short-description: An interactive map for the Brookings Institution charting the rise in nonbank mortgage lending after the Great Recession.
