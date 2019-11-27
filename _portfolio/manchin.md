@@ -2,6 +2,7 @@
 layout: post
 title: Manchin in the Middle
 type: Print and Web Design
+banner-url: /design/
 permalink: /manchin/
 thumbnail-path: "img/manchin.png"
 short-description: West Virginia Senator is the focus of this four-page feature that was the cover of the Nov. 28, 2016 issue of The Washington Examiner.

@@ -2,6 +2,7 @@
 layout: post
 title: How school district boundaries can create more segregated schools
 type: Data Visualization
+banner-url: /design/
 permalink: /racial-imbalance/
 thumbnail-path: "img/school-bus.png"
 short-description: Visualizing how school district boundaries are drawn and how that can affect the demographics in local schools.

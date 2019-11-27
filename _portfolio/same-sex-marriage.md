@@ -2,6 +2,7 @@
 layout: post
 title: Gay marriage in America after Windsor and Obergefell
 type: Writing and Editing
+banner-url: /writing-editing/
 permalink: /same-sex-marriage/
 thumbnail-path: "img/same-sex-marriage.png"
 short-description: The Brookings Institution examines data from jointly-filed tax returns to provide the first analysis of marriage patterns of same-sex couples in the years immediately following the legalization of same-sex marriage.

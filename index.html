@@ -7,8 +7,8 @@ layout: default
   <div class="work">
     <h2>My Work</h2>
     {% for project in site.portfolio %}
-    <div class="project-teaser">
-      <div style="padding-right: 0%" class="type-banner">{{project.type}}</div>
+    <a href="{{ project.banner-url | prepend: site.baseurl }}"><div class="project-teaser">
+      <div style="padding-right: 0%" class="type-banner">{{project.type}}</div></a>
       <div class="project-thumb">
         <a href="{{ project.permalink | prepend: site.baseurl }}">
           <img src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
