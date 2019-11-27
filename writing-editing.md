@@ -49,7 +49,7 @@ But Sunday, it took exactly 5,030 eggs, 50 pounds of onions, 75 bell peppers, 4 
 
 LAFAYETTE -- The top hat adorning Jezebel Lobelia’s head had a gear-shaped object perched atop it, and she wore a corset with a billowing lace dress. By her side was Christopher Slim, smartly attired in blazer, bow tie and pinstripe pants, with a holster holding a plastic toy gun on his hip.
 
-The two wouldn’t be out of place in Victorian-era London or in the Wild West. But this was Saturday, and they were in downtown Lafayette for a special occasion — that being the second-annual ![Steampunk & Makers Fair](http://steampunkandmakersfair.org/).
+The two wouldn’t be out of place in Victorian-era London or in the Wild West. But this was Saturday, and they were in downtown Lafayette for a special occasion — that being the second-annual [Steampunk & Makers Fair](http://steampunkandmakersfair.org/).
 
 ### COLD CASE CIVIL RIGHTS MURDER PROJECT:
 
