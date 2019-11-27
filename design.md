@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Writing and Editing
-permalink: /writing-editing/
+title: Print and Web Design
+permalink: /design/
 feature-img: "img/color.png"
 ---
