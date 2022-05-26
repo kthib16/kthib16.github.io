@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 
 })
 
-app.get('/', (req, res) => {
+app.get('/json', (req, res) => {
   let object = {}
   if(process.env.MESSAGE_STYLE === 'uppercase'){
      object = {
