@@ -12,11 +12,9 @@ app.get('/', (req, res) => {
 
 })
 
-app.get('/boilerplate-express-v2/json', (req, res) => {
+app.get('/json', (req, res) => {
 
-   let object = {
-    "message": "Hello json"
-  }
-
-  res.json(object)
+  res.json({
+   "message": "Hello json"
+ })
 })
