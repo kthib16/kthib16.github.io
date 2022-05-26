@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
   let absolutePath = __dirname + '/boilerplate-express-v2/views/index.html'
 
   res.sendFile(absolutePath)
-  app.use('/public', express.static(__dirname + '/public'))
+  app.use('/public', express.static(__dirname))
 
 
 })
