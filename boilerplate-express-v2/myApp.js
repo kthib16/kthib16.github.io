@@ -3,7 +3,7 @@ let express = require('express');
 let app = express();
 
 app.get('/', (req, res) => {
-  let absolutePath = __dirname + '/views/index.html'
+  let absolutePath = __dirname + '/boilerplate-express-v2/views/index.html'
 
   res.sendFile(absolutePath)
   app.use('/public', express.static(__dirname + '/public'))
