@@ -12,17 +12,15 @@ app.get('/', (req, res) => {
 
 })
 
-app.get(__dirname + '/json', (req, res) => {
-  let object = {}
+app.get('/json', (req, res) => {
+  let message = "Hello json"
   if(process.env.MESSAGE_STYLE === 'uppercase'){
-     object = {
-      "message": "HELLO JSON"
-    }
-  } else {
-   object = {
-    "message": "Hello json"
+     message = "HELLO JSON"
+
   }
-}
+   object = {
+    "message": message
+  }
 
   res.json(object)
 })
