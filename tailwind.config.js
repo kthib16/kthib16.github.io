@@ -1,18 +1,11 @@
-//tailwind.config.js
+// tailwind.config.js
 module.exports = {
   content: [
-    './pages/*.{html,js}',
-    './components/*.{html,js}',
+    './pages/**/*.{html,js}',
     './components/**/*.{html,js}',
-
   ],
   theme: {
-    extend: {
-      container: {
-        center: 'true',
-        padding: '24rem',
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }

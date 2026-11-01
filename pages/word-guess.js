@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Head from 'next/head'
 import WordTiles from '../components/WordTiles.js'
 import Layout, { siteTitle } from '../components/layout'
 
@@ -38,7 +39,9 @@ const changeIsCorrect =  () => {
 
 return(
   <Layout>
-    <p>Guess the word! Start typing.</p>
+    <Head><title>{`Word Guess | ${siteTitle}`}</title></Head>
+    <h1 className='text-3xl font-bold text-slate-900 mb-2'>Word Guess</h1>
+    <p className='text-slate-700'>Guess the six-letter word. Start typing and press Enter to submit each guess.</p>
     {word
       ?<>
         {[1, 2, 3, 4, 5, 6].map((row) => (
