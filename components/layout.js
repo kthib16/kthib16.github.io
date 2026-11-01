@@ -23,7 +23,7 @@ export default function Layout({ children, home }) {
       <header className="w-full sticky top-0 bg-white/95 border-b border-slate-200 z-50">
         <div className="max-w-4xl mx-auto px-6 h-14 flex items-center justify-between">
           <nav className="flex items-center gap-4 sm:gap-6 whitespace-nowrap">
-            <Link href="/"><a className="font-bold text-slate-900 hover:text-blue-700">Kevin T.<span className="hidden sm:inline">hibodeaux</span></a></Link>
+            <Link href="/"><a className={navLink}>Kevin Thibodeaux</a></Link>
             <Link href="/experience"><a className={navLink}>Experience</a></Link>
             <Link href="/contact"><a className={navLink}>Contact</a></Link>
           </nav>
