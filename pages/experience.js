@@ -10,6 +10,15 @@ return(
       <title>{siteTitle}</title>
     </Head>
     <h1 className="text-xl text-purple-500 font-bold">Experience</h1>
+
+    <h2 className="text-lg text-purple-500 font-bold">Work</h2>
+    <ul className='list-disc ml-6 mb-4'>
+      <li><strong>Capital One</strong> - Software engineer working in React, TypeScript, Vue, Angular and Node.js, with AWS (ECS/Fargate) deployments.</li>
+      <li><strong>Federal Reserve Board</strong> - Public communications strategist: web content, CMS administration and SEO.</li>
+      <li><strong>Brookings Institution</strong> - Web content and digital media specialist, including data visualization and interactive graphics built with D3.js.</li>
+    </ul>
+
+    <h2 className="text-lg text-purple-500 font-bold">Training</h2>
     <p>Below are some of the trainings and courses I've taken. I'm constantly looking to learn more, so this list will continue to update:</p>
 
     <h2>Bootcamps</h2>

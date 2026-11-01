@@ -70,82 +70,25 @@ const onChange = e => {
   setAutofocus(autofocus + 1)
 }
 
+    const result = props.rowObject[props.row]
+
     return(
-      <form key={'letter-tile-r'+ props.row} className ={styles.row}>
-        <div key={'letter-tile-r'+ props.row + '-s1'}
-             className={styles.letterTile}
-             style={{backgroundColor: (props.rowObject[props.row] ?props.rowObject[props.row][0].color :' #e1e1e1')}}>
-          {props.currentRow === props.row
-            ?<input name={'input-r'+ props.row + '-s1'}
-                    type='text'
-                    maxLength='1'
-                    onChange={onChange}
-                    onKeyDown={onKeyDown}
-                    autoFocus={autofocus === 0}/>
-            : props.rowObject[props.row] ?props.rowObject[props.row][0].value : ''
-          }
+      <form key={'letter-tile-r'+ props.row} className={styles.row} onSubmit={e => e.preventDefault()}>
+        {[0, 1, 2, 3, 4, 5].map((slot) => (
+          <div key={'letter-tile-r'+ props.row + '-s' + (slot + 1)}
+               className={styles.letterTile}
+               style={{backgroundColor: (result ? result[slot].color : '#e1e1e1')}}>
+            {props.currentRow === props.row
+              ? <input name={'input-r'+ props.row + '-s' + (slot + 1)}
+                       type='text'
+                       maxLength='1'
+                       onChange={onChange}
+                       onKeyDown={onKeyDown}
+                       autoFocus={autofocus === slot}/>
+              : result ? result[slot].value : ''
+            }
           </div>
-        <div key={'letter-tile-r'+ props.row + '-s2'}
-             className={styles.letterTile}
-             style={{backgroundColor: (props.rowObject[props.row] ?props.rowObject[props.row][1].color :' #e1e1e1')}}>
-          {props.currentRow === props.row
-            ?<input name={'input-r'+ props.row + '-s2'}
-                    type='text'
-                    maxLength='1'
-                    onChange={onChange}
-                    onKeyDown={onKeyDown}
-                    autoFocus={autofocus === 1}/>
-            : props.rowObject[props.row] ?props.rowObject[props.row][1].value : ''
-          }
-          </div>
-        <div key={'letter-tile-r'+ props.row + '-s3'}
-             className={styles.letterTile}
-             style={{backgroundColor: (props.rowObject[props.row] ?props.rowObject[props.row][2].color :' #e1e1e1')}}>
-          {props.currentRow === props.row
-            ?<input name={'input-r'+ props.row + '-s3'}
-                    type='text'
-                    maxLength='1'
-                    onChange={onChange}
-                    onKeyDown={onKeyDown}
-                    autoFocus={autofocus === 2}/>
-            : props.rowObject[props.row] ?props.rowObject[props.row][2].value : ''   }
-          </div>
-        <div key={'letter-tile-r'+ props.row + '-s4'}
-             className={styles.letterTile}
-             style={{backgroundColor: (props.rowObject[props.row] ?props.rowObject[props.row][3].color :' #e1e1e1')}}>
-          {props.currentRow === props.row
-            ?<input name={'input-r'+ props.row + '-s4'}
-                    type='text'
-                    maxLength='1'
-                    onChange={onChange}
-                    onKeyDown={onKeyDown}
-                    autoFocus={autofocus === 3}/>
-            : props.rowObject[props.row] ?props.rowObject[props.row][3].value : ''   }
-          </div>
-        <div key={'letter-tile-r'+ props.row + '-s5'}
-             className={styles.letterTile}
-             style={{backgroundColor: (props.rowObject[props.row] ?props.rowObject[props.row][4].color :' #e1e1e1')}}>
-          {props.currentRow === props.row
-            ? <input name={'input-r'+ props.row + '-s5'}
-                     type='text'
-                     maxLength='1'
-                     onChange={onChange}
-                     onKeyDown={onKeyDown}
-                     autoFocus={autofocus === 4}/>
-            : props.rowObject[props.row] ?props.rowObject[props.row][4].value : ''    }
-          </div>
-        <div key={'letter-tile-r'+ props.row + '-s6'}
-             className={styles.letterTile}
-             style={{backgroundColor: (props.rowObject[props.row] ?props.rowObject[props.row][5].color :' #e1e1e1')}}>
-          {props.currentRow === props.row
-            ?<input name={'input-r'+ props.row + '-s6'}
-                    type='text'
-                    maxLength='1'
-                    onChange={onChange}
-                    onKeyDown={onKeyDown}
-                    autoFocus={autofocus === 5}/>
-            : props.rowObject[props.row] ?props.rowObject[props.row][5].value : ''   }
-          </div>
-        </form>
+        ))}
+      </form>
     )
 }

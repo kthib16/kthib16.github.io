@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
-export const siteTitle = 'Thibodeaux Portfolio'
+export const siteTitle = 'Kevin Thibodeaux | Software Engineer'
 
 
 export default function Layout({ children, home }) {
@@ -13,16 +13,10 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Experienced web content manager with knowledge of React and Angular."
+          content="Kevin Thibodeaux — software engineer in Washington, D.C. working with React, TypeScript, Vue, Angular and Node.js."
         />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:title" content={siteTitle} />
+        <meta name="twitter:card" content="summary" />
       </Head>
       <header className="relative h-12 w-full block sticky top-0 bg-white z-50 pt-1 px-2 object-right shadow-xl">
       <div className='absolute hover:animate-pulse hover:cursor-pointer'>
@@ -35,20 +29,22 @@ export default function Layout({ children, home }) {
       <div className='absolute right-0 pt-1 pr-2 bottom-0'>
 
 
-      <Link href="https://github.com/kthib16">
+      <Link href="https://github.com/kthib16" passHref>
         <a className='pr-4'>
           <Image
             src='/github.png'
+            alt='GitHub'
             height='25px'
             width='25px'
 
                 />
         </a>
         </Link>
-        <Link href="https://www.linkedin.com/in/thibodeauxkevin/">
+        <Link href="https://www.linkedin.com/in/thibodeauxkevin/" passHref>
           <a>
             <Image
               src='/linkedin.png'
+              alt='LinkedIn'
               height='25px'
               width='29px'
             />
@@ -67,7 +63,7 @@ export default function Layout({ children, home }) {
       )}
       <hr />
       <footer className=" bottom-0 w-full">
-        <p className='text-purple-200 '>Built using NextJS and TailwindCSS</p>
+        <p className='text-purple-300'>Built with Next.js and Tailwind CSS</p>
       </footer>
     </div>
 

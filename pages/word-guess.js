@@ -11,8 +11,8 @@ const [ rowObject, setRowObject ] = useState({})
 const [ isCorrect, setIsCorrect ] = useState(false)
 
 
-useEffect(async() => {
-  await fetch("/data/words.json")
+useEffect(() => {
+  fetch("/data/words.json")
     .then((res) => res.json())
     .then((words) => {
       const index = getRandomNumber(0,words.length)
@@ -41,54 +41,17 @@ return(
     <p>Guess the word! Start typing.</p>
     {word
       ?<>
-        <WordTiles
-          changeIsCorrect={changeIsCorrect}
-          rowObject={rowObject}
-          setRowObject={setRowObject}
-          setCurrentRow={setCurrentRow}
-          currentRow={currentRow}
-          row={1}
-          word={word} />
-        <WordTiles
-          changeIsCorrect={changeIsCorrect}
-          rowObject={rowObject}
-          setRowObject={setRowObject}
-          setCurrentRow={setCurrentRow}
-          currentRow={currentRow}
-          row={2}
-          word={word} />
-        <WordTiles
-          changeIsCorrect={changeIsCorrect}
-          rowObject={rowObject}
-          setRowObject={setRowObject}
-          setCurrentRow={setCurrentRow}
-          currentRow={currentRow}
-          row={3}
-          word={word} />
-        <WordTiles
-          changeIsCorrect={changeIsCorrect}
-          rowObject={rowObject}
-          setRowObject={setRowObject}
-          setCurrentRow={setCurrentRow}
-          currentRow={currentRow}
-          row={4}
-          word={word} />
-        <WordTiles
-          changeIsCorrect={changeIsCorrect}
-          rowObject={rowObject}
-          setRowObject={setRowObject}
-          setCurrentRow={setCurrentRow}
-          currentRow={currentRow}
-          row={5}
-          word={word} />
-        <WordTiles
-          changeIsCorrect={changeIsCorrect}
-          rowObject={rowObject}
-          setRowObject={setRowObject}
-          setCurrentRow={setCurrentRow}
-          currentRow={currentRow}
-          row={6}
-          word={word} />
+        {[1, 2, 3, 4, 5, 6].map((row) => (
+          <WordTiles
+            key={row}
+            changeIsCorrect={changeIsCorrect}
+            rowObject={rowObject}
+            setRowObject={setRowObject}
+            setCurrentRow={setCurrentRow}
+            currentRow={currentRow}
+            row={row}
+            word={word} />
+        ))}
       </>
 
       :''}

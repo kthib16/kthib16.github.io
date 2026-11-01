@@ -1,6 +1,8 @@
 .env
 .next
+out
 node_modules
-server.csr
-server.key
-server.pass.key
+*.crt
+*.ca-bundle
+*.csr
+*.key
