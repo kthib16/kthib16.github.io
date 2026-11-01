@@ -78,9 +78,8 @@ export default function Experience() {
           <a className={link} href='https://drive.google.com/file/d/1jJsNC1mGrQY6xqoxakWchHHPQwP9tTMF/view?usp=sharing'>certificate</a>)
         </li>
         <li>
-          <strong>freeCodeCamp</strong>, <a className={link} href='https://www.freecodecamp.org/certification/kthib16/javascript-algorithms-and-data-structures'>JavaScript Algorithms and Data Structures</a> (300 hours)
+          <strong>Amazon Web Services</strong>, Certified Solutions Architect – Associate, 2024
         </li>
-        <li><strong>Google</strong>, <a className={link} href='https://grow.google/certificates/android-developer/'>Android Development with Kotlin</a></li>
       </ul>
     </Layout>
   )
