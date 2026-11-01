@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import styles from './WordTiles.module.css'
+import { scoreGuess, isCorrectGuess } from '../lib/scoreGuess'
 
 export default function WordTiles(props) {
 
-const [ isCorrect, setIsCorrect ] = useState(false)
 const [ guess, setGuess ] = useState('')
 const [ autofocus, setAutofocus ] = useState(0)
 
@@ -24,45 +24,12 @@ const onKeyDown = e => {
 }
 
 const onSubmit = () => {
-  const guessArr = guess.split('')
-  let correctGuess  = 0;
-  let rowObj = {}
-  for(var i = 0; i<guessArr.length; i++){
-    //correct guess
-    if(guessArr[i] === props.word[i]){
-      rowObj[i] = {
-        value: guessArr[i],
-        color: '#B1D8B7'
+  props.setRowObject({...props.rowObject, [props.row]: scoreGuess(guess, props.word)})
+  props.setCurrentRow(props.currentRow + 1)
 
-
-      }
-      correctGuess++
-    }
-    //correct letter, wrong spot
-    else if(props.word.indexOf(guessArr[i]) !== -1){
-      rowObj[i] = {
-        value: guessArr[i],
-        color: '#FFFF8A'
-      }
-    }
-    //wrong guess
-    else {
-      rowObj[i] = {
-        value: guessArr[i],
-        color: '#e1e1e1'
-      }
-    }
+  if(isCorrectGuess(guess, props.word)){
+    props.changeIsCorrect()
   }
-
-
-    props.setRowObject({...props.rowObject, [props.row]: rowObj})
-    props.setCurrentRow(props.currentRow + 1)
-
-    if(correctGuess === 6){
-      props.changeIsCorrect()
-    }
-
-
 }
 
 const onChange = e => {

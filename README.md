@@ -4,7 +4,7 @@ Personal portfolio built with [Next.js](https://nextjs.org/) and [Tailwind CSS](
 
 ## Projects on the site
 
-- **Word Guess** — a six-letter word game built with React hooks (`pages/word-guess.js`, `components/WordTiles.js`).
+- **Word Guess** — a six-letter word game built with React hooks (`pages/word-guess.js`, `components/WordTiles.js`). Guess scoring is a pure, tested function in `lib/scoreGuess.js`.
 - **Nonbank Mortgage Lending Map** — write-up of an interactive D3.js map built for the Brookings Institution.
 - **MyCalendar** — event tracker built with React, Firebase and the Ticketmaster API ([source](https://github.com/kthib16/react-calendar-app)).
 
@@ -14,6 +14,14 @@ Personal portfolio built with [Next.js](https://nextjs.org/) and [Tailwind CSS](
 npm install
 npm run dev      # http://localhost:3000
 ```
+
+## Tests
+
+```bash
+npm test
+```
+
+The scoring rules for Word Guess live in `lib/scoreGuess.js` and are unit tested, including repeated-letter cases.
 
 ## Build and deploy
 
